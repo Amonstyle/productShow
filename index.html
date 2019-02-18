@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="style.css" />
+    <link type="text/css" rel="stylesheet" href="modal.circle.css" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1200px">
+    <title>Modal Circle</title>
+  </head>
+
+  <body>
+    
+    <div class="wrapper">
+      <div class="table-cell">
+
+        <div class="options">
+          <a href="index.html" class="btn-option active">Circle</a>
+          <a href="square.html" class="btn-option">Square</a>
+          <a href="rotate.html" class="btn-option">Rotate</a>
+        </div>
+
+        <div class="product-list">
+          <div class="item">
+            <div class="product modal-trigger" data-target="product-1">
+              <div class="modal-product">
+                <div class="image"></div>
+                <div class="title">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="price"></div>
+              </div>
+            </div>
+          </div><!-- /item -->
+          <div class="item">
+            <div class="product modal-trigger" data-target="product-1">
+              <div class="modal-product">
+                <div class="image"></div>
+                <div class="title">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="price"></div>
+              </div>
+            </div>
+          </div><!-- /item -->
+          <div class="item">
+            <div class="product modal-trigger" data-target="product-1">
+              <div class="modal-product">
+                <div class="image"></div>
+                <div class="title">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="price"></div>
+              </div>
+            </div>
+          </div><!-- /item -->
+          <div class="item">
+            <div class="product modal-trigger" data-target="product-1">
+              <div class="modal-product">
+                <div class="image"></div>
+                <div class="title">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="price"></div>
+              </div>
+            </div>
+          </div><!-- /item -->
+          <div class="item">
+            <div class="product modal-trigger" data-target="product-1">
+              <div class="modal-product">
+                <div class="image"></div>
+                <div class="title">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="price"></div>
+              </div>
+            </div>
+          </div><!-- /item -->
+          <div class="item">
+            <div class="product modal-trigger" data-target="product-1">
+              <div class="modal-product">
+                <div class="image"></div>
+                <div class="title">
+                  <span></span>
+                  <span></span>
+                </div>
+                <div class="price"></div>
+              </div>
+            </div>
+          </div><!-- /item -->
+        </div>
+        
+      </div>
+    </div>
+    
+    <div id="product-1" class="modal">
+      <div class="modal-body">
+        <div class="modal-content">
+          <button class="modal-close" type="button">Esc to close</button>
+          <div class="container">
+            <div class="content-text">
+              <img class="demo-product" src="images/productDetail.svg" alt="">
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    
+
+    <script
+  src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript" src="js/modal.circle.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('.modal-trigger').modalCircle({
+          effect: 'circle'
+        });
+        
+      });
+    </script>
+  </body>
+</html>

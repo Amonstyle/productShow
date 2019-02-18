@@ -1,0 +1,139 @@
+/* Mixins */
+@mixin border-radius($radius) {
+	-moz-border-radius:$radius;
+	-webkit-border-radius:$radius;
+	border-radius:$radius;
+}
+@mixin border-radius-important($radius) {
+	-moz-border-radius:$radius !important;
+	-webkit-border-radius:$radius !important;
+	border-radius:$radius !important;
+}
+@mixin border-radius-custom($top, $right, $bottom, $left) {
+	-moz-border-radius:$top $right $bottom $left;
+	-webkit-border-radius:$top $right $bottom $left;
+	border-radius:$top $right $bottom $left;
+}
+
+@mixin transition-transform($duration) {
+	-webkit-transition: -webkit-transform $duration;
+	-moz-transition: -moz-transform $duration;
+	transition: transform $duration; 
+}
+
+@mixin transform-scale($v,$h) {
+	-ms-transform: scale($v,$h);
+    -webkit-transform: scale($v,$h);
+    transform: scale($v,$h);
+}
+@mixin transform-rotate($deg) {
+	-ms-transform: rotate($deg);
+    -webkit-transform: rotate($deg);
+    transform: rotate($deg);
+}
+@mixin transform-rotateX($deg) {
+	-ms-transform: rotateX($deg);
+    -webkit-transform: rotateX($deg);
+    transform: rotateX($deg);
+}
+@mixin transform-rotateY($deg) {
+	-ms-transform: rotateY($deg);
+    -webkit-transform: rotateY($deg);
+    transform: rotateY($deg);
+}
+@mixin transform-skewX($deg) {
+	-ms-transform: skewX($deg);
+    -webkit-transform: skewX($deg);
+    transform: skewX($deg);
+}
+@mixin transform-skewY($deg) {
+	-ms-transform: skewY($deg);
+    -webkit-transform: skewY($deg);
+    transform: skewY($deg);
+}
+@mixin transform-origin($x, $y) {
+    -ms-transform-origin: $x $y;
+    -webkit-transform-origin: $x $y;
+    transform-origin: $x $y;
+}
+@mixin delay($s) {
+  animation-delay: $s;
+  -webkit-animation-delay: $s;
+  transition-delay: $s;
+  -webkit-transition-delay: $s;
+}
+
+@mixin transition($transition-property, $transition-time, $method) {
+	-webkit-transition: $transition-property $transition-time $method;
+	-moz-transition: $transition-property $transition-time $method;
+	-o-transition: $transition-property $transition-time $method;
+	transition: $transition-property $transition-time $method;
+}
+
+@mixin transition-both($property1,$duration1,$delay1,$property2,$duration2,$delay2) {
+	-webkit-transition: -webkit-#{$property1} $duration1 $delay1, $property2 $duration2 $delay2;
+	-moz-transition: -moz-#{$property1} $duration1 $delay1, $property2 $duration2 $delay2;
+	transition: $property1 $duration1 $delay1, $property2 $duration2 $delay2;
+}
+
+@mixin transition-with-delay($transition-property, $transition-time, $method, $delay) {
+	-webkit-transition: $transition-property $transition-time $method $delay;
+	-moz-transition: $transition-property $transition-time $method $delay;
+	-o-transition: $transition-property $transition-time $method $delay;
+	transition: $transition-property $transition-time $method $delay;
+}
+
+@mixin background-size ($method) {
+	background-size: $method;
+	-webkit-background-size: $method;
+	-moz-background-size: $method;
+	-o-background-size: $method;
+}
+
+@mixin box-shadow($v, $h, $blur, $spread, $color) {
+	-webkit-box-shadow: $v $h $blur $spread $color;
+	box-shadow:         $v $h $blur $spread $color;
+}
+
+@mixin transform-translate($x,$y) {
+	-ms-transform: translate($x,$y);
+   	-webkit-transform: translate($x,$y);
+    transform: translate($x,$y);
+}
+@mixin transform-translate3d($x,$y,$z) {
+	-ms-transform: translate($x,$y,$z);
+   	-webkit-transform: translate($x,$y,$z);
+    transform: translate($x,$y,$z);
+}
+
+@mixin transform-translateX($x) {
+	-webkit-transform: translateX($x);
+	-ms-transform: translateX($x);
+	transform: translateX($x);
+}
+@mixin transform-translateY($y) {
+	-webkit-transform: translateY($y);
+	-ms-transform: translateY($y);
+	transform: translateY($y);
+}
+@mixin transform-translateYI($y,$imp) {
+	-webkit-transform: translateY($y) $imp;
+	-ms-transform: translateY($y) $imp;
+	transform: translateY($y) $imp;
+}
+@mixin transform-translateZ($z) {
+	-webkit-transform: translateZ($z);
+	-ms-transform: translateZ($z);
+	transform: translateZ($z);
+}
+@mixin content-block() {
+	position: absolute;
+	content:"";
+}
+@mixin filter($blur) {
+	-webkit-filter: blur($blur);
+	-moz-filter: blur($blur);
+	-o-filter: blur($blur);
+	-ms-filter: blur($blur);
+	filter: blur($blur);
+}
